@@ -2,10 +2,11 @@
 layout: post
 title: JavaScript trong các trình duyệt
 date: 2017-11-12 00:00:00
-description: 'Bài này nói về JavaScript khi được sử dụng trong các trình duyệt, thường gọi là client-side JavaScript. Thuật ngữ *client-side JavaScript* sinh ra khi JavaScript được sử dụng ở hai nơi: web browser (trình duyệt) và web server. Nhưng khi JavaScript ngày càng được sử dụng ở nhiều môi trường thì thuật ngữ này càng trở nên vô nghĩa, vì nó không chỉ ra client side của *cái gì*. Tuy nhiên chúng ta vẫn tiếp tục với thuật ngữ này.'
-img: 2017-11-12-js-trong-cac-trinh-duyet-web/i-rest.jpg
+description: JavaScript khi được sử dụng trong các trình duyệt web.
+img: 2017-11-12-js-trong-cac-trinh-duyet-web/js-1.jpg
 tags: [JavaScript]
 ---
+Bài này nói về JavaScript khi được sử dụng trong các trình duyệt, thường gọi là client-side JavaScript. Thuật ngữ *client-side JavaScript* sinh ra khi JavaScript được sử dụng ở hai nơi: web browser (trình duyệt) và web server. Nhưng khi JavaScript ngày càng được sử dụng ở nhiều môi trường thì thuật ngữ này càng trở nên vô nghĩa, vì nó không chỉ ra client side của *cái gì*. Tuy nhiên chúng ta vẫn tiếp tục với thuật ngữ này.
 
 Để hiểu client-side JavaScript, bạn phải hiểu môi trường (programming environment) trình duyệt cung cấp. Có ba đặc điểm quan trọng trong môi trường đó là:
 
