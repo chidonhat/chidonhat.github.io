@@ -54,4 +54,4 @@ Như đã nói, Window là global object, là điểm đầu của scope chain, 
 
 Chú ý các đối tượng vẽ trên hình chỉ nêu một số thuộc tính, chúng còn nhiều thuộc tính khác, ngoài ra còn có cả hàm.
 
-Nhiều đối tượng trong hình trên bắt nguồn từ đối tượng Document. Cây con này của cây object hierarchy lớn hơn được gọi là document object model (DOM).
+Nhiều đối tượng trong hình trên bắt nguồn từ đối tượng Document. Cây con này trong cây object hierarchy lớn hơn gọi là document object model (DOM). DOM liên tục được chuẩn hóa. Hình trên biểu diễn các đối tượng đã trở thành tiêu chuẩn không chính thức, vì chúng luôn được thực thi trên tất cả trình duyệt. Gộp chung lại, chúng được gọi là Level 0 DOM, vì cấu thành nên mức độ chức năng cơ bản nhất.
