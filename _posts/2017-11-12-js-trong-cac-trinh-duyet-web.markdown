@@ -29,11 +29,11 @@ var answer = 42;      // Khai báo và khởi tạo một biến toàn cục
 window.answer = 42;   // Tạo một thuộc tính mới cho đối tượng Window
 {% endhighlight %}
 
-Window biểu diễn một browser window (hay một frame trong window; trong client-side JavaScript, browser window (hay top-level window) và frame tương đương nhau). Chúng ta có thể viết một ứng dụng sử dụng nhiều window (hay frame). Mỗi window đó có một đối tượng Window riêng và định nghĩa một execution context riêng. Nghĩa là, một biến toàn cục được khai báo trong window này không phải là biến toàn cục trong window khác.
+Window biểu diễn một browser window (hay một frame trong window; trong client-side JavaScript, browser window (hay top-level window) và frame là tương đương nhau). Chúng ta có thể viết một ứng dụng sử dụng nhiều window (hay frame). Mỗi window đó có một đối tượng Window riêng và định nghĩa một execution context riêng. Nghĩa là, một biến toàn cục được khai báo trong window này không phải là biến toàn cục trong window khác.
 
 ## Object hierarchy và DOM
 
-Window là đối tượng chính yếu trong client-side JavaScript. Tất cả đối tượng khác đều truy cập được thông qua đối tượng này. Ví dụ, Window có một thuộc tính `document` trỏ tới đối tượng Document liên kết với window, một thuộc tính `location` trỏ tới đối tượng Location liên kết với window. Khi trình duyệt hiển thị một framed document, mảng `frames[]` của top-level Window sẽ chứa tham chiếu tới đối tượng Window biểu diễn frame đó. Nên trong khi biểu thức `document` trỏ tới Document của một window, thì `frames[1].document` trỏ tới Document của frame thứ hai của window đó.
+Window là đối tượng chính yếu trong client-side JavaScript. Tất cả đối tượng khác đều truy cập được thông qua đối tượng này. Ví dụ, Window có một thuộc tính `document` trỏ tới đối tượng Document liên kết với window, một thuộc tính `location` trỏ tới đối tượng Location liên kết với window. Khi trình duyệt hiển thị một framed document, mảng `frames[]` của top-level Window sẽ chứa tham chiếu tới đối tượng Window biểu diễn frame đó. Nên trong khi biểu thức `document` trỏ tới Document của một window này, thì `frames[1].document` trỏ tới Document của frame thứ hai của window đó.
 
 Document cũng có các thuộc tính trỏ tới các đối tượng khác. Ví dụ, mảng đối tượng Form, `forms[]`, biểu diễn tất cả HTML form xuất hiện trong document. Để gọi tới một trong những HTML form này, bạn có thể viết:
 
@@ -54,4 +54,4 @@ Như đã nói, Window là global object, là điểm đầu của scope chain, 
 
 Chú ý các đối tượng vẽ trên hình chỉ nêu một số thuộc tính, chúng còn nhiều thuộc tính khác, ngoài ra còn có cả hàm.
 
-Nhiều đối tượng trong hình trên bắt nguồn từ đối tượng Document. Chúng hợp thành một cây con trong cây object hierarchy lớn hơn, gọi là document object model (DOM). DOM liên tục được chuẩn hóa. Hình trên biểu diễn các đối tượng Document đã trở thành tiêu chuẩn không chính thức, vì chúng luôn được thực thi trên tất cả trình duyệt. Gộp chung lại, chúng được gọi là Level 0 DOM, vì tạo nên mức độ chức năng cơ bản nhất trên tất cả các trình duyệt web.
+Nhiều đối tượng trong hình trên bắt nguồn từ đối tượng Document. Chúng hợp thành một cây con trong cây object hierarchy lớn hơn, gọi là document object model (DOM). DOM liên tục được chuẩn hóa. Hình trên biểu diễn các đối tượng Document thủa ban đầu và đã trở thành một tiêu chuẩn không chính thức, vì chúng luôn được thực thi trên tất cả trình duyệt. Tựu chung lại, chúng được gọi là Level 0 DOM, vì tạo nên mức độ chức năng cơ bản nhất trên tất cả các trình duyệt web.
